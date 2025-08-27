@@ -1,0 +1,569 @@
+.contact-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
+  color: white;
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+/* Contact Hero Section */
+.contact-hero {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.contact-hero h1 {
+  font-family: 'Orbitron', monospace;
+  font-size: 4rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, #4A90E2, #357ABD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 20px;
+}
+
+.contact-hero p {
+  font-size: 1.3rem;
+  color: #ccc;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Main Contact Content */
+.contact-main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  margin-bottom: 80px;
+}
+
+/* Contact Information Section */
+.contact-info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contact-card,
+.availability-card {
+  background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
+  border-radius: 20px;
+  padding: 40px;
+  border: 1px solid #333;
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover,
+.availability-card:hover {
+  border-color: #4A90E2;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(74, 144, 226, 0.1);
+}
+
+.contact-card h3,
+.availability-card h3 {
+  font-family: 'Orbitron', monospace;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #4A90E2;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contact-method {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.contact-method:hover {
+  background: rgba(74, 144, 226, 0.05);
+  transform: translateX(5px);
+}
+
+.contact-icon {
+  font-size: 2rem;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #4A90E2, #357ABD);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-details strong {
+  display: block;
+  color: white;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.contact-details p {
+  color: #4A90E2;
+  margin: 0 0 5px 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.contact-details small {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.availability-info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.availability-item {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 15px;
+  border-left: 4px solid #4A90E2;
+}
+
+.availability-item strong {
+  display: block;
+  color: white;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.availability-item p {
+  color: #ccc;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Booking Form */
+.booking-form-container {
+  background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
+  border-radius: 20px;
+  padding: 50px;
+  border: 1px solid #333;
+}
+
+.booking-form h3 {
+  font-family: 'Orbitron', monospace;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #4A90E2;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.form-section {
+  margin-bottom: 40px;
+}
+
+.form-section h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 25px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #4A90E2;
+  position: relative;
+}
+
+.form-section h4::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: linear-gradient(135deg, #4A90E2, #357ABD);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 15px 18px;
+  background: #333;
+  border: 2px solid #444;
+  border-radius: 12px;
+  color: white;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #4A90E2;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+  background: #3a3a3a;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #888;
+}
+
+.form-group select option {
+  background: #333;
+  color: white;
+  padding: 10px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Checkbox Group */
+.checkbox-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #ccc;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.checkbox-label:hover {
+  background: rgba(74, 144, 226, 0.05);
+  color: white;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+  accent-color: #4A90E2;
+}
+
+.checkmark {
+  width: 20px;
+  height: 20px;
+  background: #333;
+  border: 2px solid #4A90E2;
+  border-radius: 4px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.checkbox-label input[type="checkbox"]:checked + .checkmark {
+  background: #4A90E2;
+}
+
+.checkbox-label input[type="checkbox"]:checked + .checkmark::after {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 18px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.submit-btn.submitting {
+  color: transparent;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 24px;
+  height: 24px;
+  border: 3px solid #ffffff;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Success Message */
+.success-message {
+  text-align: center;
+  padding: 80px 40px;
+  background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
+  border-radius: 20px;
+  border: 1px solid #333;
+}
+
+.success-icon {
+  font-size: 5rem;
+  margin-bottom: 30px;
+  animation: bounce 0.8s ease-out;
+}
+
+.success-message h2 {
+  font-family: 'Orbitron', monospace;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #4A90E2;
+  margin-bottom: 25px;
+}
+
+.success-message p {
+  color: #ccc;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 500px;
+  margin: 0 auto 40px;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Contact CTA */
+.contact-cta {
+  background: linear-gradient(135deg, #4A90E2, #357ABD);
+  border-radius: 20px;
+  padding: 60px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" patternUnits="userSpaceOnUse" width="100" height="100"><rect width="100" height="100" fill="%23ffffff" opacity="0.03"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  pointer-events: none;
+}
+
+.contact-cta h3 {
+  font-family: 'Orbitron', monospace;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: white;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-cta p {
+  font-size: 1.3rem;
+  color: white;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+
+.cta-buttons .btn {
+  background: white;
+  color: #4A90E2;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid white;
+}
+
+.cta-buttons .btn:hover {
+  background: transparent;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+}
+
+.cta-buttons .btn-outline {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.cta-buttons .btn-outline:hover {
+  background: white;
+  color: #4A90E2;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .contact-main {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .contact-hero h1 {
+    font-size: 3rem;
+  }
+  
+  .booking-form-container {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-page {
+    padding-top: 100px;
+  }
+  
+  .contact-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .contact-hero p {
+    font-size: 1.1rem;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  
+  .checkbox-group {
+    grid-template-columns: 1fr;
+  }
+  
+  .booking-form-container {
+    padding: 30px;
+  }
+  
+  .booking-form h3 {
+    font-size: 1.8rem;
+  }
+  
+  .contact-card,
+  .availability-card {
+    padding: 30px;
+  }
+  
+  .contact-method {
+    align-items: flex-start;
+  }
+  
+  .contact-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    margin-top: 5px;
+  }
+  
+  .contact-cta {
+    padding: 40px 30px;
+  }
+  
+  .contact-cta h3 {
+    font-size: 2rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .contact-card,
+  .availability-card,
+  .booking-form-container {
+    padding: 25px;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 12px 15px;
+  }
+  
+  .submit-btn {
+    padding: 15px;
+    font-size: 1rem;
+  }
+  
+  .success-message {
+    padding: 60px 25px;
+  }
+  
+  .success-message h2 {
+    font-size: 2rem;
+  }
+  
+  .contact-cta h3 {
+    font-size: 1.8rem;
+  }
+}
